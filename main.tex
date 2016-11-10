@@ -14,12 +14,10 @@
 
 % русские буквы в формулах
 \usepackage{mathtext}
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage{amsfonts}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
 
 
-\usepackage[left=35mm, right=20mm, top=20mm, bottom=20mm, landscape, a3paper]{geometry}
+\usepackage[left=25mm, right=15mm, top=15mm, bottom=15mm, landscape, a3paper]{geometry}
 \tolerance=314
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,6 +38,22 @@
 \def\heightline{1.0}
 \linespread{\heightline} % 1.3 - это полуторный
 
+\usepackage{hyperref}
+%\usepackage[usenames,dvipsnames,svgnames,table,rgb]{xcolor}
+\hypersetup{				% Гиперссылки
+	unicode=true,           % русские буквы в раздела PDF
+	pdftitle={Заголовок},   % Заголовок
+	pdfauthor={Автор},      % Автор
+	pdfsubject={Тема},      % Тема
+	pdfcreator={Создатель}, % Создатель
+	pdfproducer={Производитель}, % Производитель
+	pdfkeywords={keyword1} {key2} {key3}, % Ключевые слова
+	colorlinks=true,       	% false: ссылки в рамках; true: цветные ссылки
+	linkcolor=red,          % внутренние ссылки
+	citecolor=black,        % на библиографию
+	filecolor=magenta,      % на файлы
+	urlcolor=cyan           % на URL
+}
 
 \title{\textbf{\Huge{Проект загородного дома}}}
 \author{ Морозов Андрей }
@@ -73,12 +87,7 @@
 
 
 \newpage
-\begin{thebibliography}{999}
-\addcontentsline{toc}{section}{Список литературы}
-	\bibitem{sn} СП номер все. 
-	\bibitem{newshouse}  \href{http://www.newshouse.ru}{\small NewsHouse }
-	\bibitem{forumhouse} \href{http://www.forumhouse.tv}{\small ForumHouse }
-\end{thebibliography}
+\input{thebibliography.tex}
 
 %\newpage
 %\addcontentsline{toc}{section}{Список иллюстраций}
