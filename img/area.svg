@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g lc:layername="0" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
-        <line x1="0"     y1="4313"  x2="6854" y2="6429"/>
-        <line x1="6854"  y1="6429"  x2="8522" y2="2085"/>
-        <line x1="8522"  y1="2085"  x2="2292" y2="0"/>
-        <line x1="2292"  y1="0"     x2="0"    y2="4313"/>
-    </g>
-</svg>
